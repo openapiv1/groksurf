@@ -19,8 +19,7 @@ import {
 } from "lucide-react";
 import { useChat } from "@/lib/chat-context";
 import { Badge } from "../ui/badge";
-import { OpenAiLogo } from "@phosphor-icons/react";
-import { AnthropicLogo } from "../icons";
+import { XAILogo } from "../icons";
 
 const messageVariants = cva("", {
   variants: {
@@ -130,11 +129,7 @@ export function ChatMessage({ message, className }: ChatMessageProps) {
   const getRoleIcon = () => {
     if (isUser) return <User className="h-3 w-3" />;
     if (isAssistant) {
-      if ((message as AssistantChatMessage).model === "openai") {
-        return <OpenAiLogo className="h-3 w-3" />;
-      } else {
-        return <AnthropicLogo className="h-3 w-3" />;
-      }
+      return <XAILogo className="h-3 w-3" />;
     }
     return <Info className="h-3 w-3" />;
   };

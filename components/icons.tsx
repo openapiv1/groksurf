@@ -189,7 +189,7 @@ export const InvoiceIcon = ({ size = 16 }: { size: number }) => {
   );
 };
 
-export const AnthropicLogo = ({
+export const XAILogo = ({
   size = 16,
   className,
 }: {
@@ -200,21 +200,12 @@ export const AnthropicLogo = ({
     <svg
       width={size}
       height={size}
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
-      viewBox="0 0 92.2 65"
+      viewBox="0 0 24 24"
       className={className}
+      fill="currentColor"
     >
-      <style>{`.st0{fill:currentColor;}`}</style>
-      <path
-        className="st0"
-        d="M66.5,0H52.4l25.7,65h14.1L66.5,0z M25.7,0L0,65h14.4l5.3-13.6h26.9L51.8,65h14.4L40.5,0C40.5,0,25.7,0,25.7,0z
-        M24.3,39.3l8.8-22.8l8.8,22.8H24.3z"
-      />
+      <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5L19 8v8l-7 3.5L5 16V8l7-3.5z"/>
+      <path d="M8 10l4 4 4-4M16 14l-4-4-4 4"/>
     </svg>
   );
 };

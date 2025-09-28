@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useMemo } from "react";
-import { OpenAiLogo } from "@phosphor-icons/react";
 import { ChevronsRight, StopCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -15,7 +14,7 @@ import {
 } from "../ui/select";
 import { useChat } from "@/lib/chat-context";
 import { Input } from "../ui/input";
-import { AnthropicLogo } from "../icons";
+import { XAILogo } from "../icons";
 import { motion } from "motion/react";
 
 interface ChatInputProps {
@@ -56,17 +55,12 @@ export function ChatInput({
               className="absolute rounded-lg left-1.5 z-10 inset-y-1.5 border-border-200 w-min aspect-square h-auto flex items-center justify-center hover:bg-bg focus:bg-bg"
               withIcon={false}
             >
-              {model == "openai" ? (
-                <OpenAiLogo className="size-5" />
-              ) : (
-                <AnthropicLogo className="size-5" />
-              )}
+              <XAILogo className="size-5" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
                 <SelectLabel>Model</SelectLabel>
-                <SelectItem value="openai">OpenAI</SelectItem>
-                <SelectItem value="anthropic">Anthropic</SelectItem>
+                <SelectItem value="xai">XAI Grok</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select> */}
